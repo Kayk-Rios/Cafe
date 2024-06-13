@@ -26,7 +26,7 @@ background: wheat;
 }
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 20px;
     padding-top: 1.5rem;
@@ -49,11 +49,7 @@ ul {
     color: wheat;
     text-decoration: none;
 }
- .icone ion-icon{
-    width: 76px;
-    font-size: 26px;
-    cursor: pointer;
-}
+
 .C-title{
 margin-left: 5rem;
 margin-top: 10rem;
@@ -79,6 +75,9 @@ font-size: 18px;
     transform: translateY(-5px);
     border: 1.5px solid  wheat;
 
+}
+.but{
+    display: none;
 }
 .top-logo{
     position: fixed;
@@ -140,9 +139,8 @@ border-radius: 10px;
     padding-top: 5px;
     padding-bottom: 40px;
 }
-/* #porducts{
 
-} */
+
 .content{
     font-size: 20px;
 }
@@ -158,11 +156,15 @@ align-items: center;
 justify-content: center;
     
 }
-.row iframe{
-    margin-top: 3em;
-    margin-left: 35%;
+.row {
+    display:flex ;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+
+}
+.row iframe{
+    margin-top: 3em;
     width: 30rem;
     height: 40vh;
     margin-bottom: 3em;
@@ -196,4 +198,71 @@ span{
 }
 .spa{
     color: wheat;
+}
+.pit{
+    display: none;
+}
+
+@media  (max-width: 600px){
+    .links{
+        display: none;
+    }
+   .box-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin-left: 45px;
+   }
+   .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    
+   }
+
+   .row iframe{
+    margin-top: 3em;
+    width: 22rem;
+    height: 40vh;
+    margin-bottom: 3em;
+
+   }
+   .pit{
+    display: flex;
+   }
+   .pop{
+    display: fel;
+   }
+   #my-pop{
+    padding: 10px;
+    background-color: black;
+
+   }
+   #my-pop a{
+    color: wheat;
+    text-decoration: none;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    margin-left: 100px;
+}
+   .but{
+    margin-bottom: 100px;
+    margin-left: 100px;
+    display: flex;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: wheat;
+    border: none;
+   }
+   .title h1{
+    font-size: 40px;
+   }
 }
