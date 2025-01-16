@@ -202,6 +202,36 @@ span{
 .pit{
     display: none;
 }
+.footer {
+    background-color: #2f2f2f;
+    color: wheat;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer .credit {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer .credit span {
+    font-weight: bold;
+    color: wheat;
+}
+
+@media (max-width: 600px) {
+    .footer {
+        font-size: 14px;
+        padding: 15px 0;
+    }
+
+    .footer .credit {
+        font-size: 12px;
+    }
+}
+
 
 @media  (max-width: 600px){
     .links{
